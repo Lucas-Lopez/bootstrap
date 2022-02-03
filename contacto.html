@@ -4,82 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Intensas</title>
 </head>
 
-<body id="gridContacto">
+<body>
     
-    <header class="gridHeader">
-        <img src="img/Logo.jpeg" alt="" class="imgLogo">  
+    <header class="d-flex justify-content-between red align-items-center justify-content-center">
+        <img src="img/Logo.jpeg" alt="" class="img-fluid img-thumbnail">  
         <form action="#" class="buscar">
             <input type="search" id="site-search" name="q" >
             <button>Buscar</button>
         </form>
-        <section class="perfil">
-            <a href="perfil.html"> <img src="img/perfil.png" alt=""  class="imgLogo"> </a>
-            <a href="carrito.html"> <img src="img/carrito.png" alt="" class="imgLogo" > </a>
+        <section class="">
+            <a href="perfil.html"> <img src="img/perfil.png" alt=""  class="img-fluid img-thumbnail"> </a>
+            <a href="carrito.html"> <img src="img/carrito.png" alt="" class="img-fluid img-thumbnail" > </a>
         </section>
     </header>
 
-    <nav class="gridNav">
-        <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="carrito.html">Carrito</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
-        </ul>
-    </nav>
+    <ul class="nav justify-content-center justify-content-around ">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio    </a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto      </a></li>
+        <li class="nav-item"><a class="nav-link" href="productos.html">Productos    </a></li>
+        <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito        </a></li>
+        <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil          </a></li>
+    </ul>
    
-    <article class="gridRedes">
-        Podes contactarte con nosotros por nuestras redes sociales
+    <div class="container">
+        <div class="row">
 
-        <a href="https://www.instagram.com/intensas_in/" target="blank"><img src="img/instagram.png" alt="" height="100px" >Instagram</a>
+            <article class="col d-flex flex-column align-content-center">
+                <h2>Podes contactarte con nosotros por nuestras redes sociales</h2>
+                
+            <a href="https://www.instagram.com/" target="blank"><img src="img/instagram.png" alt="" class="img-thumbnail-redes" >Instagram</a>
+            <br>
+            <a href="https://www.facebook.com/" target="blank"><img src="img/facebook.png" alt="" class="img-thumbnail-redes"  >facebook</a>
         <br>
-        <a href="https://www.facebook.com/Intensas-108751921688913" target="blank"><img src="img/facebook.png" alt="" height="100px" >facebook</a>
-        <br>
-        <a href="https://www.twitter.com" target="blank"><img src="img/twitter.png" alt="" height="100px" >Twitter</a>
+        <a href="https://www.twitter.com" target="blank"><img src="img/twitter.png" alt=""  class="img-thumbnail-redes" >Twitter</a>
     </article>
 
-    <form action="#" class="gridForm">
-        
-        Nombre
-        <input type="text" id="name" name="nombre">
-        <br>
-        apellido
-        <input type="text" name="apellido" id="lastname">
-        <br>
-        mail
-        <input type="email" name="mail" id="email">
-        <br>
-        mensaje
-        <input type="text" name="mensaje" id="message">
-        <button>Enviar</button>
-    </form>
+        <form action="#" class="col">
+            <h2>O dejá tus datos y nos contactamos nosotros</h2>
+            Nombre
+            <input type="text" id="name" name="nombre">
+            <br>
+            apellido
+            <input type="text" name="apellido" id="lastname">
+            <br>
+            mail
+            <input type="email" name="mail" id="email">
+            <br>
+            mensaje
+            <input type="text" name="mensaje" id="message">
+            <button>Enviar</button>
+        </form>
+    </div>
+</div>
 
-    <footer class="gridFooter">        
-        <div class="redes">
-            <a href="https://www.facebook.com/Intensas-108751921688913" target="blank"><img src="img/facebook.png" alt="" class="imgRed" ></a>
-            <a href="https://www.twitter.com" target="blank"><img src="img/twitter.png" alt="" class="imgRed" ></a>
-            <a href="mailto:maildeejemplo@gmail.com" target="blank"><img src="img/mail.png" alt="" class="imgRed" ></a>
-            <a href="https://www.instagram.com/intensas_in/" target="blank"><img src="img/instagram.png" alt="" class="imgRed" ></a>
+<footer class=" page-footer font-small lightblue pt-4">
+
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0189604635248!2d-58.3827185150011!3d-34.60368205551094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb00df970495%3A0x7918ac117a88aaa7!2sAcademia%20de%20las%20Artes%20y%20Ciencias%20Cinematogr%C3%A1ficas%20de%20la%20Argentina!5e0!3m2!1ses!2sar!4v1640548928838!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">Redes</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="instagram.com"><img src="img/instagram.png" class="img-thumbnail-redes"></a>
+            </li>
+            <li>
+              <a href="facebook.com"><img src="img/facebook.png" alt="" class="img-thumbnail-redes"></a>
+            </li>
+            <li>
+              <a href="twitter.com"><img src="img/twitter.png" alt="" class="img-thumbnail-redes"></a>
+            </li>
+            <li>
+              <a href="mailto:mail@ejemplo.com"><img src="img/mail.png" alt="" class="img-thumbnail-redes"></a>
+            </li>
+          </ul>
+  
         </div>
 
-        <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0189604635248!2d-58.3827185150011!3d-34.60368205551094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb00df970495%3A0x7918ac117a88aaa7!2sAcademia%20de%20las%20Artes%20y%20Ciencias%20Cinematogr%C3%A1ficas%20de%20la%20Argentina!5e0!3m2!1ses!2sar!4v1640548928838!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Inicio    </a></li>
+            <li><a href="contacto.html">Contacto      </a></li>
+            <li><a href="productos.html">Productos    </a></li>
+            <li><a href="carrito.html">Carrito        </a></li>
+            <li><a href="perfil.html">Perfil          </a></li>
+          </ul>
+  
         </div>
-
-
-
-        <ul class="links">
-            <a href="index.html"><li>Inicio</li></a>
-            <a href="productos.html"><li>Productos</li></a>
-            <a href="contacto.html"><li>Contacto</li></a>
-            <a href="carrito.html"><li>Carrito</li></a>
-            <a href="perfil.html"><li>Perfil</li></a>
-        </ul>
-    </footer>
+      </div>
+    </div>
+    <div class="footer-copyright text-center blue py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+  </footer>
 </body>
 
 
